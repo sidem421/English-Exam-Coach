@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Topics</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Choose a Topic</h2>
+
+    <button onclick="go('Relative Clauses')">Relative Clauses</button>
+    <button onclick="go('Gerund')">Gerund & Infinitive</button>
+    <button onclick="go('The')">The</button>
+    <button onclick="go('Reflexive')">Reflexive Pronouns</button>
+    <button onclick="go('Reported')">Reported Speech</button>
+    <button onclick="go('Vocabulary')">Vocabulary</button>
+</div>
+
+<script>
+function go(topic){
+    localStorage.setItem("topic", topic);
+    window.location.href = "quiz.html";
+}
+</script>
+
+</body>
+</html>
